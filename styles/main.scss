@@ -1,0 +1,38 @@
+@import "fonts";
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
+@import "bootstrap_overrides";
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Metropolis", Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.progress-bar {
+    &.str-0 {
+        width: 0%;
+        background-color: $danger;
+    }
+    &.str-1 {
+        width: 25%;
+        background-color: $danger;
+    }
+    &.str-2 {
+        width: 50%;
+        background-color: $warning;
+    }
+    &.str-3 {
+        width: 75%;
+        background-color: $info;
+    }
+    &.str-4 {
+        width: 100%;
+        background-color: $success;
+    }
+}
