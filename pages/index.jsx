@@ -98,7 +98,7 @@ const Index = props => {
                                     <div className="form-group">
                                         <label htmlFor="inputPassword">Password</label>
                                         <div className="input-group">
-                                            <input type={passwordToggled ? "input" : "password"} name="password" id="inputPassword" className="form-control" onChange={e => passwordTest(e) } autoComplete="new-password" />
+                                            <input type={passwordToggled ? "text" : "password"} name="password" id="inputPassword" className="form-control" onChange={e => passwordTest(e) } autoComplete="new-password" />
                                             <div className="input-group-append">
                                                 <button className="btn btn-link" onClick={e => togglePasswordShow(e)}>{passwordToggled ? `Hide` : `Show`}</button>
                                             </div>
