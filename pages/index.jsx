@@ -100,7 +100,7 @@ const Index = props => {
                                         <div className="input-group">
                                             <input type={passwordToggled ? "text" : "password"} name="password" id="inputPassword" className="form-control" onChange={e => passwordTest(e) } autoComplete="new-password" />
                                             <div className="input-group-append">
-                                                <button className="btn btn-link" onClick={e => togglePasswordShow(e)}>{passwordToggled ? `Hide` : `Show`}</button>
+                                                <button type="button" className="btn btn-link" onClick={e => togglePasswordShow(e)}>{passwordToggled ? `Hide` : `Show`}</button>
                                             </div>
                                         </div>
                                     </div>
